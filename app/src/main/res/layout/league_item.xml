@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="4dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+    <ImageView
+        android:id="@+id/league_image"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="league_logo"
+        android:src="@drawable/league_logo_2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:padding="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/league_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Premier League"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="START DATE"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+
+                <TextView
+                    android:id="@+id/league_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-08-03"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="END DATE"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+
+                <TextView
+                    android:id="@+id/league_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-08-03"
+                    android:textAppearance="?attr/textAppearanceBody2"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Country: "
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+        <TextView
+            android:id="@+id/league_country_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="England"
+            android:layout_weight="1"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
